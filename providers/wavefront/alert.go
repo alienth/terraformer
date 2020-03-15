@@ -18,10 +18,15 @@ func (g *AlertGenerator) createAlertResources(client *wavefront.Client) error {
 		return err
 	}
 
+	seen := make(map[string]bool)
 	for _, alert := range alerts {
+		if _, found := seen[*alert.ID]; found {
+			continue
+		}
+		seen[*alert.ID] = true
 		g.Resources = append(g.Resources, terraform_utils.NewSimpleResource(
-			fmt.Sprintf("%d", alert.ID),
-			fmt.Sprintf("%s", alert.Name),
+			fmt.Sprintf("%s", *alert.ID),
+			fmt.Sprintf("%s-%s", alert.Name, *alert.ID),
 			"wavefront_alert",
 			g.ProviderName,
 			[]string{},
