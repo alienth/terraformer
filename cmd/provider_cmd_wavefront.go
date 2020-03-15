@@ -9,11 +9,11 @@ import (
 
 func newCmdWavefrontImporter(options ImportOptions) *cobra.Command {
 	cmd := &cobra.Command{
-		Use:   "newrelic",
+		Use:   "wavefront",
 		Short: "Import current state to Terraform configuration from Wavefront",
 		Long:  "Import current state to Terraform configuration from Wavefront",
 		RunE: func(cmd *cobra.Command, args []string) error {
-			provider := newNewRelicProvider()
+			provider := newWavefrontProvider()
 			err := Import(provider, options, []string{})
 			if err != nil {
 				return err
@@ -23,7 +23,7 @@ func newCmdWavefrontImporter(options ImportOptions) *cobra.Command {
 	}
 
 	cmd.AddCommand(listCmd(newWavefrontProvider()))
-	baseProviderFlags(cmd.PersistentFlags(), &options, "alert", "newrelic_dashboard=id1:id2:id4")
+	baseProviderFlags(cmd.PersistentFlags(), &options, "alert", "wavefront_alert=id1:id2:id4")
 	return cmd
 }
 
