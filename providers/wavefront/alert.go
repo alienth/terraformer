@@ -24,12 +24,16 @@ func (g *AlertGenerator) createAlertResources(client *wavefront.Client) error {
 			continue
 		}
 		seen[*alert.ID] = true
+
+		if alert.AlertType == "" {
+			alert.AlertType = wavefront.AlertTypeClassic
+		}
 		g.Resources = append(g.Resources, terraform_utils.NewSimpleResource(
 			fmt.Sprintf("%s", *alert.ID),
 			fmt.Sprintf("%s-%s", alert.Name, *alert.ID),
 			"wavefront_alert",
 			g.ProviderName,
-			[]string{},
+			[]string{"tags"},
 		))
 	}
 
