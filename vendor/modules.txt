@@ -47,6 +47,8 @@ github.com/Azure/go-autorest/logger
 github.com/Azure/go-autorest/tracing
 # github.com/BurntSushi/toml v0.3.1
 github.com/BurntSushi/toml
+# github.com/OctopusDeploy/go-octopusdeploy v1.6.0
+github.com/OctopusDeploy/go-octopusdeploy/octopusdeploy
 # github.com/agext/levenshtein v1.2.2
 github.com/agext/levenshtein
 # github.com/ajg/form v1.5.1
@@ -148,18 +150,24 @@ github.com/aws/aws-sdk-go-v2/private/protocol/xml
 github.com/aws/aws-sdk-go-v2/private/protocol/xml/xmlutil
 github.com/aws/aws-sdk-go-v2/service/accessanalyzer
 github.com/aws/aws-sdk-go-v2/service/acm
+github.com/aws/aws-sdk-go-v2/service/apigateway
 github.com/aws/aws-sdk-go-v2/service/autoscaling
 github.com/aws/aws-sdk-go-v2/service/budgets
 github.com/aws/aws-sdk-go-v2/service/cloud9
 github.com/aws/aws-sdk-go-v2/service/cloudformation
 github.com/aws/aws-sdk-go-v2/service/cloudfront
 github.com/aws/aws-sdk-go-v2/service/cloudtrail
+github.com/aws/aws-sdk-go-v2/service/cloudwatch
+github.com/aws/aws-sdk-go-v2/service/cloudwatchevents
 github.com/aws/aws-sdk-go-v2/service/codebuild
 github.com/aws/aws-sdk-go-v2/service/codecommit
 github.com/aws/aws-sdk-go-v2/service/codedeploy
 github.com/aws/aws-sdk-go-v2/service/codepipeline
+github.com/aws/aws-sdk-go-v2/service/datapipeline
+github.com/aws/aws-sdk-go-v2/service/devicefarm
 github.com/aws/aws-sdk-go-v2/service/dynamodb
 github.com/aws/aws-sdk-go-v2/service/ec2
+github.com/aws/aws-sdk-go-v2/service/ecr
 github.com/aws/aws-sdk-go-v2/service/ecs
 github.com/aws/aws-sdk-go-v2/service/eks
 github.com/aws/aws-sdk-go-v2/service/elasticache
@@ -171,19 +179,25 @@ github.com/aws/aws-sdk-go-v2/service/emr
 github.com/aws/aws-sdk-go-v2/service/firehose
 github.com/aws/aws-sdk-go-v2/service/glue
 github.com/aws/aws-sdk-go-v2/service/iam
+github.com/aws/aws-sdk-go-v2/service/iot
 github.com/aws/aws-sdk-go-v2/service/kafka
 github.com/aws/aws-sdk-go-v2/service/kinesis
 github.com/aws/aws-sdk-go-v2/service/kms
 github.com/aws/aws-sdk-go-v2/service/lambda
+github.com/aws/aws-sdk-go-v2/service/mediapackage
+github.com/aws/aws-sdk-go-v2/service/mediastore
 github.com/aws/aws-sdk-go-v2/service/organizations
 github.com/aws/aws-sdk-go-v2/service/rds
 github.com/aws/aws-sdk-go-v2/service/route53
 github.com/aws/aws-sdk-go-v2/service/s3
 github.com/aws/aws-sdk-go-v2/service/s3/internal/arn
 github.com/aws/aws-sdk-go-v2/service/s3/internal/external
+github.com/aws/aws-sdk-go-v2/service/ses
 github.com/aws/aws-sdk-go-v2/service/sns
 github.com/aws/aws-sdk-go-v2/service/sqs
 github.com/aws/aws-sdk-go-v2/service/sts
+github.com/aws/aws-sdk-go-v2/service/waf
+github.com/aws/aws-sdk-go-v2/service/wafregional
 # github.com/bgentry/go-netrc v0.0.0-20140422174119-9fd32a8b3d3d
 github.com/bgentry/go-netrc/netrc
 # github.com/bgentry/speakeasy v0.1.0
@@ -203,6 +217,8 @@ github.com/denverdino/aliyungo/common
 github.com/denverdino/aliyungo/cs
 github.com/denverdino/aliyungo/ecs
 github.com/denverdino/aliyungo/util
+# github.com/dghubble/sling v1.1.0
+github.com/dghubble/sling
 # github.com/dgrijalva/jwt-go v3.2.0+incompatible
 github.com/dgrijalva/jwt-go
 # github.com/digitalocean/godo v1.29.0
@@ -216,6 +232,11 @@ github.com/dollarshaveclub/new-relic-synthetics-go/util
 github.com/fastly/go-fastly/fastly
 # github.com/fatih/color v1.7.0
 github.com/fatih/color
+# github.com/go-playground/locales v0.12.1
+github.com/go-playground/locales
+github.com/go-playground/locales/currency
+# github.com/go-playground/universal-translator v0.16.0
+github.com/go-playground/universal-translator
 # github.com/go-resty/resty/v2 v2.1.1-0.20191201195748-d7b97669fe48
 github.com/go-resty/resty/v2
 # github.com/gogo/protobuf v1.3.1
@@ -713,6 +734,10 @@ google.golang.org/grpc/stats
 google.golang.org/grpc/status
 google.golang.org/grpc/tap
 google.golang.org/grpc/test/bufconn
+# gopkg.in/go-playground/assert.v1 v1.2.1
+gopkg.in/go-playground/assert.v1
+# gopkg.in/go-playground/validator.v9 v9.19.0
+gopkg.in/go-playground/validator.v9
 # gopkg.in/inf.v0 v0.9.1
 gopkg.in/inf.v0
 # gopkg.in/ini.v1 v1.51.0

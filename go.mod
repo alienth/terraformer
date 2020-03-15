@@ -15,14 +15,13 @@ require (
 	github.com/aliyun/alibaba-cloud-sdk-go v1.60.295
 	github.com/aliyun/aliyun-oss-go-sdk v0.0.0-20190307165228-86c17b95fcd5 // indirect
 	github.com/aliyun/aliyun-tablestore-go-sdk v4.1.3+incompatible
-	github.com/aws/aws-sdk-go v1.26.5 // indirect
+	github.com/aws/aws-sdk-go v1.26.5
 
 	github.com/aws/aws-sdk-go-v2 v0.19.0
 	github.com/bmatcuk/doublestar v1.2.2 // indirect
 	github.com/cenkalti/backoff v2.2.1+incompatible // indirect
 	github.com/cloudflare/cloudflare-go v0.11.0
 	github.com/denverdino/aliyungo v0.0.0-20191217032211-d5785803c365
-	github.com/dghubble/sling v1.1.0
 	github.com/digitalocean/godo v1.29.0
 	github.com/dollarshaveclub/new-relic-synthetics-go v0.0.0-20170605224734-4dc3dd6ae884
 	github.com/fastly/go-fastly v1.3.0
